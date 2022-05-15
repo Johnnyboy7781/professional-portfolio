@@ -2,13 +2,21 @@ import React from 'react';
 
 import Nav from '../Nav';
 
-function Header() {
-    const sections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
+function Header(props) {
+    const {
+        sections,
+        currSection,
+        setCurrSection
+    } = props;
     
     return (
         <header>
             <h1>Jonathan McDonnell</h1>
-            <Nav sections={sections} />
+            <Nav 
+                sections={sections} 
+                currSection={currSection}
+                setCurrSection={setCurrSection}
+            />
         </header>
     )
 }

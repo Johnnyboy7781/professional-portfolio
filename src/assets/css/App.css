@@ -89,3 +89,22 @@ li:not(.selected):hover {
   display: flex;
   justify-content: center;
 }
+
+/* footer styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--background);
+}
+
+svg {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+svg:hover {
+  opacity: 0.5;
+}

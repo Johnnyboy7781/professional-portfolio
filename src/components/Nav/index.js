@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Nav(props) {
-    const { sections } = props;
-    const [currSection, setCurrSection] = useState(sections[0]);
-
+    const {
+        sections,
+        currSection,
+        setCurrSection
+    } = props;
+    
     const changeSection = (sectionName) => {
         setCurrSection(sectionName);
     }
@@ -13,7 +16,8 @@ function Nav(props) {
             <ul>
                 {sections.map(section => (
                     <li 
-                    className={section === currSection && 'selected'}
+                    className={section === currSection ? 'selected' : ''}
+                    key={section}
                     onClick={() => changeSection(section)}>
                         {section}
                     </li>
