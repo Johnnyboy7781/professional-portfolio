@@ -8,6 +8,8 @@ View the webpage here: https://johnnyboy7781.github.io/professional-portfolio/
 
 ## Built with
 * Javascript
+* CSS
+* HTML
 * Node
 * React
 * gh-pages
