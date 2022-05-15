@@ -191,7 +191,7 @@ li:not(.selected):hover {
 }
 
 .zero {
-  background-image: url(../../assets/imgs/0.jpg);
+  background-image: url(../../assets/imgs/0.png);
 }
 
 .one {
@@ -199,19 +199,19 @@ li:not(.selected):hover {
 }
 
 .two {
-  background-image: url(../../assets/imgs/2.jpg);
+  background-image: url(../../assets/imgs/2.png);
 }
 
 .three {
-  background-image: url(../../assets/imgs/3.jpg);
+  background-image: url(../../assets/imgs/3.png);
 }
 
 .four {
-  background-image: url(../../assets/imgs/4.jpg);
+  background-image: url(../../assets/imgs/4.png);
 }
 
 .five {
-  background-image: url(../../assets/imgs/5.jpg);
+  background-image: url(../../assets/imgs/5.png);
 }
 
 /* Contact form styles */
