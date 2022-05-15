@@ -25,7 +25,7 @@ function App() {
         {currSection === sections[2] && <Contact />}
         {currSection === sections[3] && <Resume />}
       </main>
-      <Footer />
+      <Footer forceBottom={currSection === sections[2] ? true : false} />
     </div>
   );
 }
