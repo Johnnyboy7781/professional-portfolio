@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <section>
+        <section className='about-section'>
             <div className='profile-pic-container'>
                 <img
                     className='profile-pic'

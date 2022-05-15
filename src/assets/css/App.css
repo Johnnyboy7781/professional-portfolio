@@ -22,18 +22,20 @@ section {
 }
 
 /* Header styles */
+header, header h1 {
+  font-size: clamp(1.2rem, 5vw, 2rem);
+}
+
 header {
   background-color: var(--background);
   padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 150%;
   color: white;
 }
 
 header h1 {
-  font-size: 150%;
   display: flex;
 }
 
@@ -86,21 +88,22 @@ li:not(.selected):hover {
   color: var(--background);
 }
 
-@media screen and (max-width: 1050px) {
-  header, header h1 {
-    font-size: 6vw;
-  }
+/* About section styles */
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* About section styles */
 .about-container {
-  font-size: 30px;
+  font-size: min(30px, 5vw);
   background-color: white;
   color: var(--background);
   margin: 0 30px 30px 30px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 15px;
-  max-width: 900px;
+  width: min(900px, 90%);
   z-index: 0;
   padding-top: 80px;
   transform: translateY(-80px);
@@ -111,7 +114,8 @@ li:not(.selected):hover {
 }
 
 .profile-pic {
-  width: 250px;
+  max-width: 250px;
+  width: 45vw;
   border-radius: 50%;
   border: 5px solid white;
   z-index: 1;
@@ -209,12 +213,6 @@ li:not(.selected):hover {
 .five {
   background-image: url(../../assets/imgs/5.jpg);
 }
-
-/* @media screen and (max-width: 570px) {
-  .project {
-    width: 300px;
-  }
-}  */
 
 /* Contact form styles */
 .contact {
