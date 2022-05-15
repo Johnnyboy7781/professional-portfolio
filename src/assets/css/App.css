@@ -1,0 +1,91 @@
+:root {
+  --background: #282c34;
+  --background-light: #494f5b;
+  --prim: #61dafb;
+  --prim-light: #dd904f;
+}
+
+body {
+  background-color: var(--background-light);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 25px;
+}
+
+/* Header styles */
+header {
+  background-color: var(--background);
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 150%;
+  color: white;
+}
+
+header h1 {
+  font-size: 150%;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 0 25px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+li:not(.selected):hover {
+  background-color: var(--background-light);
+}
+
+.selected {
+  background-color: var(--prim);
+  color: var(--background);
+}
+
+/* About section styles */
+.about-container {
+  font-size: 30px;
+  background-color: white;
+  color: var(--background);
+  margin: 0 30px 30px 30px;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  z-index: 0;
+  padding-top: 80px;
+  transform: translateY(-80px);
+}
+
+.about {
+  line-height: 1.25;
+}
+
+.profile-pic {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid white;
+  z-index: 1;
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+}
