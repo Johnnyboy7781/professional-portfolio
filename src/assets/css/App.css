@@ -14,6 +14,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 section {
@@ -43,6 +44,31 @@ ul {
   justify-content: center;
 }
 
+.modal {
+  display: flex;
+  position: absolute;
+  right: 0;
+  background-color: var(--background);
+  border-radius: 15px;
+  padding: 30px 0 10px 0;
+  z-index: 100;
+  transition: 200ms;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  transform: translateY(-20px);
+}
+
+.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+}
+
+.modal-container {
+  position: relative;
+}
+
 li {
   margin: 0 25px;
   padding: 5px 7px;
@@ -58,6 +84,12 @@ li:not(.selected):hover {
 .selected {
   background-color: var(--prim);
   color: var(--background);
+}
+
+@media screen and (max-width: 1050px) {
+  header, header h1 {
+    font-size: 6vw;
+  }
 }
 
 /* About section styles */
@@ -99,7 +131,8 @@ li:not(.selected):hover {
 }
 
 .project {
-  width: 500px;
+  max-width: 500px;
+  width: 90vw;
   aspect-ratio: 2/1;
   background-color: var(--background);
   border-radius: 15px;
@@ -122,7 +155,7 @@ li:not(.selected):hover {
   padding: 5px 7px;
 }
 
-.project-details-container svg {
+.project-details-container svg, .hamburger {
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(200deg) brightness(114%) contrast(101%);
 }
 
@@ -177,11 +210,11 @@ li:not(.selected):hover {
   background-image: url(../../assets/imgs/5.jpg);
 }
 
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 570px) {
   .project {
     width: 300px;
   }
-} 
+}  */
 
 /* Contact form styles */
 .contact {
@@ -219,6 +252,32 @@ button:hover {
   color: var(--background);
 }
 
+/* Resume styles */
+.resume-container {
+  background-color: var(--background);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.resume {
+  margin-bottom: 20px;
+}
+
+.resume a {
+  color: var(--prim);
+  text-decoration: none;
+}
+
+.resume a:hover {
+  text-decoration: underline;
+}
+
+.proficiencies {
+  flex-direction: column;
+  list-style: square;
+}
+
 /* footer styles */
 footer {
   display: flex;
@@ -226,6 +285,10 @@ footer {
   align-items: center;
   padding: 15px;
   background-color: var(--background);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 svg {
@@ -236,10 +299,4 @@ svg {
 
 svg:hover {
   opacity: 0.5;
-}
-
-.force-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
