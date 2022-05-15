@@ -1,11 +1,16 @@
 import './App.css';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Hey how's it goin
-      </header>
+      <Header />
+      <main>
+        Woohoo
+      </main>
+      <Footer />
     </div>
   );
 }
