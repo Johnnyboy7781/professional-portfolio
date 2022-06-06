@@ -29,10 +29,10 @@ const projects = [
     deployedUrl: "https://safe-fjord-78314.herokuapp.com/",
   },
   {
-    name: "Note Taker",
+    name: "Refreshr",
     index: "four",
-    repoUrl: "https://github.com/Johnnyboy7781/note-taker",
-    deployedUrl: "https://shrouded-chamber-02704.herokuapp.com/",
+    repoUrl: "https://github.com/Johnnyboy7781/refreshr",
+    deployedUrl: "https://mighty-reef-66523.herokuapp.com/",
   },
   {
     name: "Pizza Hunt",
